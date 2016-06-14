@@ -30,8 +30,8 @@ private static final long serialVersionUID = 1L;
 		super();
 	}
 	
-	List<Conseiller> getAllConseiller() {
-		conseillerList = conseillerService.getAllConseiller();
+	List<Conseiller> getAllConseillers() {
+		conseillerList = conseillerService.getAllConseillers();
 	}
 	
 
