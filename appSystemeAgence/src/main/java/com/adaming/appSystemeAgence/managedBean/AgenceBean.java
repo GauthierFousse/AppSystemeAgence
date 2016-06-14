@@ -31,7 +31,9 @@ private static final long serialVersionUID = 1L;
 	}
 	
 	List<Conseiller> getAllConseillers() {
+		System.out.println("===== Entrée dans la méthode getAllConseillers de AgenceBean.java. =====");
 		conseillerList = conseillerService.getAllConseillers();
+		System.out.println("===== Fin de la méthode getAllConseillers de AgenceBean.java. =====");
 		return conseillerList;
 	}
 	
