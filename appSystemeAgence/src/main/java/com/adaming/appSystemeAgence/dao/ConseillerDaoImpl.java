@@ -57,4 +57,12 @@ public class ConseillerDaoImpl implements IConseillerDao {
 		
 	}
 
+	/**
+	 * Ajoute un conseiller à la bdd
+	 */
+	public void addConseiller(Conseiller pConseiller) {
+		Session session = sessionFactory.openSession();
+		session.save(pConseiller);
+	}
+
 }
