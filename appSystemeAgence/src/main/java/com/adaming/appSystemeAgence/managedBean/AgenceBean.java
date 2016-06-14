@@ -32,6 +32,7 @@ private static final long serialVersionUID = 1L;
 	
 	List<Conseiller> getAllConseillers() {
 		conseillerList = conseillerService.getAllConseillers();
+		return conseillerList;
 	}
 	
 
