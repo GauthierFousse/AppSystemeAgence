@@ -54,7 +54,6 @@ public class ConseillerDaoImpl implements IConseillerDao {
 		List<Conseiller> conseillerList = query.list();
 		
 		return conseillerList;
-		
 	}
 
 	/**
