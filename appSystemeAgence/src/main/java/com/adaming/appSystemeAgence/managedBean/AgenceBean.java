@@ -1,0 +1,36 @@
+package com.adaming.appSystemeAgence.managedBean;
+
+import java.io.Serializable;
+import java.util.List;
+import javax.faces.bean.*;
+
+import javax.enterprise.context.RequestScoped;
+
+import com.adaming.appSystemeAgence.modele.Conseiller;
+
+@ManagedBean(name="agenceMB")
+@RequestScoped
+public class AgenceBean implements Serializable {
+	
+private static final long serialVersionUID = 1L;
+	
+	private List<Conseiller> conseillerList;
+
+	
+	//la couche service : injection du service dans le managedbean
+	@ManagedProperty(value="#{conseillerServiceBean}")
+	private IConseillerService conseillerService;
+
+	/**
+	 * ctor 
+	 */
+	public AgenceBean() {
+		super();
+	}
+	
+	List<Conseiller> getAllConseiller() {
+		conseillerList = conseillerService.getAllConseiller();
+	}
+	
+
+}
