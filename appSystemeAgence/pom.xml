@@ -71,6 +71,11 @@
   			<artifactId>hibernate-jpa-2.0-api</artifactId>
   			<version>1.0.1.Final</version>
   		</dependency>
+  		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>5.1.0.Final</version>
+		</dependency>
 
 		<!-- Transaction -->
 		<dependency>
@@ -126,17 +131,19 @@
   			<version>4.2.6.RELEASE</version>
   		</dependency>
 		
-		<!-- JSP -->
+		<!-- JSTL -->
 		<dependency>
   			<groupId>jstl</groupId>
   			<artifactId>jstl</artifactId>
   			<version>1.2</version>
   		</dependency>
+  		<!-- JSP -->
   		<dependency>
   			<groupId>javax.servlet</groupId>
   			<artifactId>jsp-api</artifactId>
   			<version>2.0</version>
   		</dependency>
+  		<!-- Servlet -->
   		<dependency>
   			<groupId>javax.servlet</groupId>
   			<artifactId>javax.servlet-api</artifactId>
