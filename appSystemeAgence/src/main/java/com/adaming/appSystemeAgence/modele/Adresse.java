@@ -5,6 +5,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity(name = "adresse")
@@ -24,7 +25,11 @@ public class Adresse {
 
 	@Column(name = "ville")
 	private String ville;
-
+	
+	/////////// ASSOCIATIONS ////////////
+	
+	@OneToOne(mappedBy = "adresse")
+	private Personne personne;
 	
 	/////////// CONSTRUCTEURS /////////
 	

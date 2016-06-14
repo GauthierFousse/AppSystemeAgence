@@ -1,13 +1,31 @@
 package com.adaming.appSystemeAgence.modele;
 
+import javax.persistence.Entity;
+import javax.persistence.Inheritance;
+import javax.persistence.InheritanceType;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
+import javax.persistence.Table;
+
+@Entity(name="personne")
+@Inheritance(strategy=InheritanceType.SINGLE_TABLE)
+@Table(name="personnes")
 public abstract class Personne {
 
 	private int id;
 	private String nom;
 	private String prenom;
-	private Adresse adresse;
 	private String telPrive;
+	
+	
+	/////////// ASSOCIATIONS ///////////
+	
+	@OneToOne
+	@JoinColumn(name = "adresse_id", referencedColumnName = "id_adresse")
+	private Adresse adresse;
 
+	/////////// CONSTRUCTEURS /////////
+	
 	public Personne() {
 		super();
 	}
