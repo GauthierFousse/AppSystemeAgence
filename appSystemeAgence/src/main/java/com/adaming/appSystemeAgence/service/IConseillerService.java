@@ -7,6 +7,8 @@ import com.adaming.appSystemeAgence.modele.Conseiller;
 
 public interface IConseillerService {
 	
-	public List<Conseiller> recupListeConseillers();
+	public List<Conseiller> getAllConseillers();
+	public void addConseiller(Conseiller pConseiller);
+	
 
 }

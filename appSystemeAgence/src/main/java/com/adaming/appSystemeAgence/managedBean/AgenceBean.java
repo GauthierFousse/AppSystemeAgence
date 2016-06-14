@@ -2,11 +2,12 @@ package com.adaming.appSystemeAgence.managedBean;
 
 import java.io.Serializable;
 import java.util.List;
-import javax.faces.bean.*;
 
+import javax.faces.bean.*;
 import javax.enterprise.context.RequestScoped;
 
 import com.adaming.appSystemeAgence.modele.Conseiller;
+import com.adaming.appSystemeAgence.service.IConseillerService;
 
 @ManagedBean(name="agenceMB")
 @RequestScoped

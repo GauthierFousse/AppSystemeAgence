@@ -8,7 +8,7 @@ public interface IConseillerDao {
 	
 	Boolean isExist(int idConseiller);
 	
-	public List<Conseiller> getAllConseiller();
+	public List<Conseiller> getAllConseillers();
 	
 	public void addConseiller(Conseiller pConseiller);
 

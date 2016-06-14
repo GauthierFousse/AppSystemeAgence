@@ -13,7 +13,16 @@ public class ConseillerServiceImpl implements IConseillerService {
 	/**
 	 * Récupération de l'ensemble des conseillers sous forme de liste.
 	 */
-	public List<Conseiller> recupListeConseillers() {
-		return conseillerDao.getAllConseiller();
+	public List<Conseiller> getAllConseillers() {
+		return conseillerDao.getAllConseillers();
 	}
+
+	/**
+	 * Ajout d'un conseiller
+	 */
+	public void addConseiller(Conseiller pConseiller) {
+		conseillerDao.addConseiller(pConseiller);
+	}
+	
+	
 }

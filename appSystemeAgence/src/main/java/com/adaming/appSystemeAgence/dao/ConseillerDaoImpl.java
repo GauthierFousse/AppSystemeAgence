@@ -43,7 +43,7 @@ public class ConseillerDaoImpl implements IConseillerDao {
 	 * Récupère la liste des conseiller
 	 */
 	@Transactional(readOnly = true)
-	public List<Conseiller> getAllConseiller(){
+	public List<Conseiller> getAllConseillers(){
 		Session session = sessionFactory.openSession();
 		
 		String hqlReq = "FROM Conseiller";
